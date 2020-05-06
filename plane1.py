@@ -27,7 +27,7 @@ class Turbulance:
         self.degree = number
 
     def vibrations(self):
-        number = random.gauss(0, 2 * random.randit(1, 10))
+        number = random.gauss(0, 2 * random.randint(1,10))
         self.degree = number
 
 
