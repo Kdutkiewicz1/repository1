@@ -18,7 +18,7 @@ class Event(ABC):
 def main():
           plane = Plane()
           turbulence = Turbulance()
-          logging.basicConfig(filename='plane.log', filemode='w', level=logging.INFO,
+          logging.basicConfig(filename='information.log', filemode='w', level=logging.INFO,
           format='%(asctime)s %(message)s')
           logging.info('plane  inizial orientation {} '.format(plane.begin))
           plane.tilt(turbulence.correction())
