@@ -3,11 +3,10 @@ import time
 
 
 class Plane:
-    def _init_(self, begin=0):
-        self.begin = begin
+    def _init_(self):
+        self.begin = 0
 
     def tilt(self, degree):
-        degree = random.randint(-90, 90)
         self.begin += degree
 
     def decompression(self, pressure_level: float = 1013, pressure_level_drop: float = random.random()):
@@ -44,4 +43,3 @@ if __name__ == "__main__":
         turbulence.correction()
         turbulence.vibrations()
         print(turbulence.degree)
-     
