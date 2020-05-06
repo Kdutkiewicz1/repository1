@@ -1,4 +1,5 @@
 import random
+import time
 
 
 class Plane:
@@ -25,6 +26,22 @@ class Turbulance:
         number = random.random()
         self.degree = number
 
-    def vibrations(self):
-        number = random.gauss(0, 2 * random.randint(1, 10))
+    def vibrations(self, vibration: float):
+        number = random.gauss(0, 2 * vibration)
         self.degree = number
+
+
+first_correction = 40
+if __name__ == "__main__":
+    plane = Plane()
+    turbulence = Turbulance(0)
+    end_program = 1
+
+
+
+    while end_program == 1:
+        time.sleep(1)
+        turbulence.correction()
+        turbulence.vibrations(float(first_correction))
+        print(turbulence.degree)
+     
