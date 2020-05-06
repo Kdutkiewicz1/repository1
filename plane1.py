@@ -26,8 +26,8 @@ class Turbulance:
         number = random.random()
         self.degree = number
 
-    def vibrations(self, vibration: float):
-        number = random.gauss(0, 2 * vibration)
+    def vibrations(self):
+        number = random.gauss(0, 2 * random.randit(1, 10))
         self.degree = number
 
 
@@ -42,6 +42,6 @@ if __name__ == "__main__":
     while end_program == 1:
         time.sleep(1)
         turbulence.correction()
-        turbulence.vibrations(float(first_correction))
+        turbulence.vibrations()
         print(turbulence.degree)
      
