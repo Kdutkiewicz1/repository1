@@ -1,6 +1,6 @@
 import logging
 import multiprocessing as mp
-from jhhjhjssdsd import Plane
+from plane1 import Plane
 from abc import ABC, abstractmethod
 import random
 
@@ -24,7 +24,7 @@ class Turbulance(Event):
 class Correction(Event):
 
     def change_degree(self):
-        value = random.gauss(0, 2 * random.randint(1, 9))
+        value = random.gauss(0, 2 * random.randint(1, 10))
         self.degree = value
         return self.degree
 
