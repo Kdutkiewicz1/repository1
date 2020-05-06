@@ -12,7 +12,7 @@ class Event(ABC):
         super().__init__()
 
     @abstractmethod
-    def change_angle(self):
+    def degree(self):
         pass
 
 def main():
