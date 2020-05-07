@@ -3,7 +3,7 @@ import time
 
 
 class Plane:
-    def _init_(self):
+    def __init__(self):
         self.begin = 0
 
     def tilt(self, degree):
